@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "nicelydone": {
+      "type": "http",
+      "url": "https://mcp.nicelydone.club/mcp"
+    },
+    "lazyweb": {
+      "type": "http",
+      "url": "https://www.lazyweb.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${LAZYWEB_MCP_TOKEN}"
+      }
+    },
+    "inspoai": {
+      "type": "http",
+      "url": "https://app.inspoai.io/mcp"
+    }
+  }
+}

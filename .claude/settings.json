@@ -1,0 +1,24 @@
+{
+  "enabledMcpjsonServers": ["nicelydone", "lazyweb", "inspoai"],
+  "extraKnownMarketplaces": {
+    "refero": {
+      "source": { "source": "github", "repo": "referodesign/refero_skill" }
+    },
+    "ruflo": {
+      "source": { "source": "github", "repo": "ruvnet/ruflo" }
+    },
+    "arena-skill": {
+      "source": { "source": "github", "repo": "Jakeschincariol/arena-skill" }
+    },
+    "impeccable": {
+      "source": { "source": "github", "repo": "pbakaus/impeccable" }
+    }
+  },
+  "enabledPlugins": {
+    "refero@refero": true,
+    "ruflo-core@ruflo": true,
+    "arena-skill@arena-skill": true,
+    "impeccable@impeccable": true,
+    "frontend-design@claude-plugins-official": true
+  }
+}

@@ -38,6 +38,21 @@
 - `/arena-skill:arena 이 함수 리팩터링` · `/impeccable polish`
 - Ruflo: `/ruflo` (콘솔), 자세한 기능은 [ruvnet/ruflo](https://github.com/ruvnet/ruflo)
 
+## 현재 상태: 디자인 도구는 꺼 둠
+
+지금은 **Arena, Ruflo만 켜져 있고** 화면 디자인용 도구는 꺼져 있습니다.
+화면(웹페이지, 대시보드 등)을 만들 일이 생기면 Claude Code에 이렇게 말하면 됩니다:
+
+> README의 "디자인 도구 다시 켜기" 대로 다시 켜줘
+
+### 디자인 도구 다시 켜기
+
+1. `.claude/settings.json`
+   - `enabledPlugins`에서 `refero@refero`, `impeccable@impeccable`, `frontend-design@claude-plugins-official`을 `true`로 변경
+   - `disabledMcpjsonServers`를 `[]`로, `enabledMcpjsonServers`를 `["nicelydone", "lazyweb", "inspoai"]`로 변경
+2. Lazyweb 스킬을 쓰려면 `optional/lazyweb-skills/` 폴더를 `.claude/skills/`로 이동
+3. Claude Code를 다시 시작하고 `/mcp`에서 로그인
+
 ## 참고
 
 - 플러그인은 `.claude/settings.json`의 마켓플레이스에서 받아오므로 항상 최신 버전이 설치됩니다.
